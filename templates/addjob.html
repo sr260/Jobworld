@@ -1,0 +1,33 @@
+{% extends 'home.html' %}
+{% block head %}
+<title>Add Jobs</title>
+{% endblock %}
+{% block body %}
+
+<h1>Have a new vacancy?</h1>
+<h2>Add job here</h2>
+<div class="col-md-4">
+</div>
+<div class="col-md-4">
+<div class="card">
+	<div class="card-body">
+<form class='form' method="POST">
+	<label>Jobid</label><br>
+	<input type="text" name="job" id="job" class="form-control" placeholder="Jobid"><br>
+	
+	<label>Name</label><br>
+	<input type="text" name="content" id="content" class="form-control" placeholder="Company Name"><br>
+	
+	<label>Position</label><br>
+	<input type="text" name="mail" id="mail" class="form-control" placeholder="Position"><br>
+	<label>Vacancy</label><br>
+	<input type="text" name="pass" id="pass" class="form-control" placeholder="Vacancies"><br><br>
+	<input type="submit" class="btn btn-primary btn-block btn-lg" value="Add Job">
+
+</form><br>
+<a href="/"><button class="btn btn-primary">Logout</button></a>
+</div>
+</div>
+</div>
+
+{% endblock %}
