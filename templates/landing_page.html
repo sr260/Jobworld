@@ -1,0 +1,27 @@
+{% extends 'home.html' %}
+{% block head %}
+<title>Job World</title>
+
+{% endblock %}
+{% block body %}
+
+<h1 style="font-size: 80px">Welcome to the Job World</h1>
+<div class="container" style="margin-top: 50px">
+	<div class="row">
+<div class="col-md-8" style="margin-left: 0px; margin-top: 60px">
+  <h3>Lost Job during pandemic or willing to restart your career?</h3>
+   <h4>You are at the right place</h4>
+   <h4>SignUp/Login to explore new jobs and get a kickstart to your career</h4>
+</div>
+
+<div class="col-md-4">
+	<h2>Are you a Job Seeker?</h2>
+	<h4>Existing Users <a href="/login"><button class="btn btn-success">Login</button></a></h4>
+<h4>New Users <a href="/signup"><button class="btn btn-primary">Sign Up</button></a></h4><br>
+	<h2>Are you a Employer?</h2>
+	<h4>Existing Users <a href="/login_company"><button class="btn btn-success">Login</button></a></h4>
+<h4>New Users <a href="/signup_company"><button class="btn btn-primary">Sign Up</button></a></h4>
+</div>
+</div>
+</div>
+{% endblock %}
