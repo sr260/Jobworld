@@ -1,6 +1,6 @@
 # Jobworld
 Job World is a job search app built for blue collared workers to search for jobs.
-It is developed using Flask, Html, Css, Bootstrap, Sqlite and is deployed using heroku
+It is developed using Flask, Html, Css, Bootstrap, Sqlite and is deployed using heroku.
 Link to deployed web app: https://jobworldwebapp.herokuapp.com/
 
 Features of Web App:
