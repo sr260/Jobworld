@@ -14,4 +14,4 @@ Features of Web App:
      a.] You will be shown a list of all the job applications that candidates have applied for your company
      b.] You will be provided a button clicking on which you will be able to add new jobs that you might have in your company by filing a form
 5. Log Out button to log out from your account
-6. Email and contact number provided to raise any queries that a anyone visiting the site may have
+6. Email and contact number provided to raise any queries that anyone visiting the site may have
