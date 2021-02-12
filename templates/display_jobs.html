@@ -1,0 +1,68 @@
+{% extends 'home.html' %}
+{% block head %}
+<title>Find Jobs</title>
+{% endblock %}
+{% block body %}
+<h1>In need of Job?</h1>
+<h3>  Find and apply to a suitable job below</h3>
+<style>
+table, th, td {
+  border: 2px solid black;
+ }
+
+
+#table1 {
+	width: 80%;
+  border-collapse: collapse;
+  
+}
+</style>
+<a href="/"><button class="btn-danger">Logout</button></a>
+<h1>Available Jobs</h1>
+<table id="table1" style="margin-left: 150px; margin-right: 400px; margin-top: 50px ">
+	{% if data %}
+	<tr>
+		{% for header in headings %}
+		<th style="text-align: center;">{{header}}</th>
+		{% endfor %}
+	</tr>
+	<tr>
+		{% for row in data.items %}
+			<tr>
+				<td>{{ row.job }}</td>
+				<td>{{ row.name }}</td>
+				<td>{{ row.position }}</td>
+				<td>{{ row.vacancy }}</td>
+				<td><a href="application_form"><button  class="btn btn-danger">Apply</button></a></td>
+			</tr>
+		{% endfor %}
+	</tr>
+	{% else %}
+	<h1>No Jobs Avaialable</h1>
+	{% endif %}
+</table>
+<br>
+<h1>Applied Jobs</h1>
+<table id="table1" style="margin-left: 150px; margin-right: 400px; margin-top: 40px ">
+	{% if data2 %}
+	<tr>
+		{% for header in head1 %}
+		<th style="text-align: center;">{{header}}</th>
+		{% endfor %}
+	</tr>
+	<tr>
+		{% for row in data2 %}
+			<tr>
+				<td>{{ row.name }}</td>
+				<td>{{ row.post }}</td>
+				<td>{{ row.company }}</td>
+			</tr>
+		{% endfor %}
+	</tr>
+	{% else %}
+	<h1>No applied jobs yet</h1>
+	{% endif %}
+</table>
+<h1></h1>
+<h1></h1>
+{% endblock %}
