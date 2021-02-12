@@ -1,0 +1,33 @@
+{% extends 'home.html' %}
+{% block head %}
+<title>Apply Here</title>
+{% endblock %}
+{% block body %}
+<h1>Apply Here</h1>
+<div class="col-md-4">
+	</div>
+<div class="col-md-4">
+<div class="card">
+	<div class="card-body">
+<form class='form' method="POST">
+	<label>Name</label><br>
+	<input type="text" name="content" id="content" class="form-control" placeholder="Name"><br>
+	
+	<label>Email</label><br>
+	<input type="email" name="mail" id="mail" class="form-control" placeholder="Email"><br>
+	<label>Postition applying for</label><br>
+	<input type="text" name="post" id="post" class="form-control" placeholder="Position"><br><br>
+	<label>Company applying for</label><br>
+	<input type="text" name="company" id="company" class="form-control" placeholder="Company Name"><br><br>
+	<label>Years Of Experience</label><br>
+	<input type="text" name="year" id="year" class="form-control" placeholder="YOE"><br><br>
+	<label>Past Company</label><br>
+	<input type="text" name="past" id="past" class="form-control" placeholder="Past Company"><br><br>
+	
+	<input type="submit" class="btn btn-primary btn-block btn-lg" value="Apply">
+
+</form><br>
+</div>
+</div>
+</div>
+{% endblock %}
