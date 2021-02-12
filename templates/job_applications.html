@@ -1,0 +1,49 @@
+{% extends 'home.html' %}
+{% block head %}
+<title>Company Job Applications</title>
+
+{% endblock %}
+{% block body %}
+<style>
+table, th, td {
+  border: 2px solid black;
+ }
+
+
+#table1 {
+	width: 80%;
+  border-collapse: collapse;
+  
+}
+</style>
+
+<h1>Job applications</h1>
+ 
+<table id="table1" style="margin-left: 150px; margin-right: 400px; margin-top: 50px ">
+	{% if data2 %}
+	<tr>
+		{% for header in head %}
+		<th style="text-align: center;">{{header}}</th>
+		{% endfor %}
+	</tr>
+	<tr>
+		{% for row in data2 %}
+			<tr>
+				<td>{{ row.name }}</td>
+				<td>{{ row.email }}</td>
+				<td>{{ row.post }}</td>
+				<td>{{ row.year }}</td>
+				<td>{{ row.past }}</td>
+				
+			</tr>
+		{% endfor %}
+	</tr>
+	{% else %}
+	<h2>No job applications for your company yet</h2>
+	{% endif %}
+</table>
+<br>
+<br>
+<a href="addjob"><button  class="btn btn-danger">Add new jobs</button></a>
+<a href="/"><button  class="btn btn-danger">Logout</button></a>
+{% endblock %}
