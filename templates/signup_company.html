@@ -1,0 +1,27 @@
+{% extends 'home.html' %}
+{% block head %}
+<title>Sign Up</title>
+{% endblock %}
+{% block body %}
+<h1>Create a new account</h1>
+<div class="col-md-4">
+</div>
+<div class="col-md-4">
+<div class="card">
+	<div class="card-body">
+<form class='form' method="POST">
+	<label>Company Name</label><br>
+	<input type="text" name="content" id="content" class="form-control" placeholder="Company Name" required="required"><br>
+	
+	<label>Email</label><br>
+	<input type="email" name="mail" id="mail" class="form-control" placeholder="Email" required="required"><br>
+	<label>Password</label><br>
+	<input type="password" name="pass" id="pass" class="form-control" placeholder="Password" required="required"><br><br>
+	<input type="submit" class="btn btn-primary btn-block btn-lg" value="Sign Up">
+
+</form><br>
+<p>Already a member? <a href="/login_company">Login</a></p>
+</div>
+</div>
+</div>
+{% endblock %}
