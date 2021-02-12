@@ -5,7 +5,7 @@ Link to deployed web app: https://jobworldwebapp.herokuapp.com/
 
 Features of Web App:
 1. Sign Up pages to create new account for both job seekers and employers
-2. Login pages to log into the account for bot job seekers and employers
+2. Login pages to log into the account for both job seekers and employers
 3. Once you log in as a job seeker :
      a.] You will be shown a list of all available jobs on the portal along with an apply button corresponding to each job
      b.] Apply for suitable job by clicking on apply button and filling the application form
